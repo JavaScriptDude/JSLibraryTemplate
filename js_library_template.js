@@ -19,7 +19,6 @@ var $$LIBDEF$$ = { ns: 'MySampleLib', library: 'my_sample_library', version: '0.
   }(this, (function (global) { var _LD=$$LIBDEF$$, _exports = {__proto__: null, NS: _LD.ns, LIBRARY: _LD.library, VERSION: _LD.version};
   // BP end
     global.__sample_lib_loaded__ = true
-    q$.called(arguments)
 
     // Declare all your functions, constants, classes here
     // Export items with: _export['<key>'] = <obj> 
@@ -53,7 +52,7 @@ var $$LIBDEF$$ = { ns: 'MySampleLib', library: 'my_sample_library', version: '0.
         // End of module
         return _exports
 
-    }))); var INTERNAL = _exports["INTERNAL"] = this.INTERNAL;
+    }))); var INTERNAL = _exports["INTERNAL"] = this.INTERNAL; // Note: this is the anon private library object for MySampleLib
 
     // End of module
     return _exports
